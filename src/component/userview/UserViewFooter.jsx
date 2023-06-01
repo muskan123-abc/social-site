@@ -1,24 +1,20 @@
 import React from "react";
 import UserImage from "../../assets/img/user.png";
+import { DotsIcon, EmojiIcon, Mich, SoundIcon } from "../common/Icons";
+
 const UserViewFooter = () => {
   return (
     <div className="bg-light_black w-full  absolute bottom-0">
       <div className=" px-4 py-3">
-        <div className="flex items-center ">
-          <img
-            className="w-[40px] h-[40px] rounded-[50%]"
-            src={UserImage}
-            alt="images"
+        <div className="flex items-center">
+          <DotsIcon />
+          <SoundIcon />
+          <input
+            type="text"
+            className="bg-dark text-white p-2 w-full  outline-none  pl-5 rounded-lg"
+            placeholder="Search or start new chat"
           />
-          <div className="flex items-center justify-between w-full ">
-            <div>
-              <h2 className="pl-3 text-white font-semibold">fghjk</h2>
-              <p className="pl-3 text-white">as</p>
-            </div>
-            <div>
-              <p className="pl-3 text-white font-thin">nnn</p>
-            </div>
-          </div>
+          <img className="w-11" src={UserImage} alt="userimage" />
         </div>
       </div>
     </div>
