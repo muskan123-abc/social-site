@@ -10,16 +10,16 @@ const TabHeader = () => {
         alt="UserImg"
       />
      <div className="flex items-center">
-     <div className="ml-8">
+     <div className="ml-8 cursor-pointer">
         <SpeakerIcon />
       </div>
-      <div className="ml-8">
+      <div className="ml-8 cursor-pointer">
         <StatusIcon />
       </div>
-      <div className="ml-8">
+      <div className="ml-8 cursor-pointer">
         <MessageIcon />
       </div>
-      <div className="ml-8">
+      <div className="ml-8 cursor-pointer">
         <DotsIcon />
       </div>
      </div>

@@ -5,7 +5,7 @@ import UserChat from './component/userview/UserChat';
 function App() {
   return (
     <>
-      <div className="flex h-screen p-5">
+      <div className="flex h-screen p-5 bg-dark">
         <UserTab />
         <UserChat/>
       </div>
