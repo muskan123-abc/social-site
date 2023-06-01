@@ -4,9 +4,13 @@ import UserViewFooter from "./UserViewFooter";
 import { useChatProvider } from "../provider/ChatProvider";
 
 const UserChat = () => {
-  const { userclickValue,userData } = useChatProvider();
+  const { userclickValue, userData } = useChatProvider();
   return (
-    <div className="bg-dark w-full relative  sm:block hidden">
+    <div
+      className={`${
+        userclickValue ? "block" : "hidden"
+      } bg-dark w-full relative  sm:block `}
+    >
       {userclickValue ? (
         <>
           <div className="flex items-center">
@@ -22,7 +26,6 @@ const UserChat = () => {
           <p>Whatsapp App</p>
         </div>
       )}
-      
     </div>
   );
 };

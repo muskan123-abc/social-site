@@ -5,7 +5,7 @@ import { TabData } from "../common/Helper";
 import { useChatProvider } from "../provider/ChatProvider";
 
 const UserTab = () => {
-  const {  setUserClickValue, setUserData } =
+  const {  setUserClickValue, setUserData, } =
     useChatProvider();
 
   const tabHandler = (value) => {
