@@ -16,16 +16,19 @@ const UserViewFooter = () => {
           <span className="mr-2 cursor-pointer">
             <EmojiIcon />
           </span>
-          <span className="mr-2 cursor-pointer">
-            <AttachmentICon />
-          </span>
+          <label for="upload-photo">
+            <span className=" cursor-pointer">
+              <AttachmentICon />
+            </span>
+          </label>
+          <input type="file" hidden name="photo" id="upload-photo" />
           <input
             onChange={(e) => setUserInputValue(e.target.value)}
             type="text"
-            className="bg-dark text-white p-2 w-full  outline-none  pl-5 rounded-lg"
+            className="bg-dark text-white p-2 w-full ff_source font-normal text-base  outline-none ms-3  pl-5 rounded-lg"
             placeholder="Search or start new chat"
           />
-          <span className="ms-2 cursor-pointer">
+          <span className="ms-2 cursor">
             {userInputValue.length > 0 ? <SendICon /> : <SoundIcon />}
           </span>
         </div>

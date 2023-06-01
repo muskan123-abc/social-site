@@ -21,7 +21,7 @@ const UserTab = () => {
         {TabData.map((value, i) => {
           return (
             <div
-              className="mt-3 px-4 py-2 cursor-pointer"
+              className="mt-3 px-4 py-2 cursor-pointer hover:bg-light_black"
               onClick={() => tabHandler(value)}
               key={i}
             >
@@ -31,15 +31,15 @@ const UserTab = () => {
                   src={value.image}
                   alt="images"
                 />
-                <div className="flex items-center justify-between w-full border-b ">
+                <div className="flex items-center justify-between w-full pb-2 border-b transition-all ease-in-out duration-300">
                   <div>
-                    <h2 className="pl-3 text-white font-semibold">
+                    <h2 className="pl-3 text-white font-semibold ff_source text-lg">
                       {value.name}
                     </h2>
-                    <p className="pl-3 text-white">as</p>
+                    <p className="pl-3 text-white font-light ff_source text-base">as</p>
                   </div>
                   <div>
-                    <p className="pl-3 text-white font-thin">{value.time}</p>
+                    <p className="pl-3 text-white font-light  ff_source text-sm">{value.time}</p>
                   </div>
                 </div>
               </div>

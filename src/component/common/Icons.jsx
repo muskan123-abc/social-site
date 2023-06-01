@@ -143,6 +143,7 @@ export const SendICon = () => {
 export const AttachmentICon = () => {
   return (
     <svg
+     
       width="22"
       height="18"
       viewBox="0 0 22 18"

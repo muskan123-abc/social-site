@@ -13,8 +13,8 @@ const UserViewHeader = ({ userData }) => {
           />
           <div className="flex items-center justify-between w-full ">
             <div>
-              <h2 className="pl-3 text-white font-semibold">{userData.name}</h2>
-              <p className="pl-3 text-white">as</p>
+              <h2 className="pl-3 text-white font-semibold ff_source text-xl mb-0">{userData.name}</h2>
+              <p className="pl-3 text-white mb-0 font-normal ff_source text-sm">as</p>
             </div>
             <div>
               <DotsIcon />
