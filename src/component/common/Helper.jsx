@@ -78,7 +78,7 @@ export const TabData = [
   {
     image: UserImg,
     name: "Muskan",
-    time: "5:46",
+    time: "5:4",
   },
 
 ];

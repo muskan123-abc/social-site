@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.chat_height{
+.chat_height {
     height: calc(100vh - 142px);
 }
+
+.sidebar_chat {
+    height: calc(100vh - 180px);
+}
+

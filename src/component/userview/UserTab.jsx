@@ -5,10 +5,10 @@ import { TabData } from "../common/Helper";
 
 const UserTab = () => {
   return (
-    <div className="w-[665px] h-full bg-dark overflow-hidden">
+    <div className="w-[665px] h-full bg-dark overflow-hidden ">
       <TabHeader />
       <SearchHeader />
-      <div className="overflow-auto h-full">
+      <div className="overflow-auto sidebar_chat  h-full    ">
         {TabData.map((value, i) => {
           return (
             <div className="mt-3 px-4 py-2" key={i}>
