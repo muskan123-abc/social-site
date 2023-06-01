@@ -1,6 +1,6 @@
 import React from "react";
 import UserImage from "../../assets/img/user.png";
-import { DotsIcon } from "../common/Icons";
+import { DotsIcon, SearchICon } from "../common/Icons";
 const UserViewHeader = ({ userData }) => {
   return (
     <div className="bg-light_black w-full ">
@@ -13,10 +13,15 @@ const UserViewHeader = ({ userData }) => {
           />
           <div className="flex items-center justify-between w-full ">
             <div>
-              <h2 className="pl-3 text-white font-semibold ff_source text-xl mb-0">{userData.name}</h2>
-              <p className="pl-3 text-white mb-0 font-normal ff_source text-sm">as</p>
+              <h2 className="pl-3 text-white font-semibold ff_source text-xl mb-0">
+                {userData.name}
+              </h2>
+              <p className="pl-3 text-white mb-0 font-normal ff_source text-sm">
+                as
+              </p>
             </div>
-            <div>
+            <div className="flex items-center gap-5 cursor-pointer">
+              <SearchICon />
               <DotsIcon />
             </div>
           </div>
