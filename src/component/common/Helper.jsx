@@ -45,41 +45,8 @@ export const TabData = [
     name: "Muskan",
     time: "5:46",
   },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:4",
-  },
+ 
+
 ];
 export const PersonalData = [
   {

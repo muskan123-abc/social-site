@@ -17,7 +17,7 @@ const UserTab = () => {
     <div className="md:w-[665px] w-full h-full bg-dark overflow-hidden ">
       <TabHeader />
       <SearchHeader />
-      <div className="overflow-auto sidebar_chat  h-full">
+      <div className="overflow-auto sidebar_chat  ">
         {TabData.map((value, i) => {
           return (
             <div
