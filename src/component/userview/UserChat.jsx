@@ -22,7 +22,7 @@ const UserChat = () => {
           <p>Whatsapp App</p>
         </div>
       )}
-      {/**/}
+      
     </div>
   );
 };

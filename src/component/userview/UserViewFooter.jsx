@@ -1,20 +1,25 @@
 import React from "react";
-import UserImage from "../../assets/img/user.png";
-import { DotsIcon, EmojiIcon, Mich, SoundIcon } from "../common/Icons";
+import { EmojiIcon, SendICon, SoundIcon } from "../common/Icons";
+import { useChatProvider } from "../provider/ChatProvider";
 
 const UserViewFooter = () => {
+  const { userInputValue, setUserInputValue } = useChatProvider();
   return (
     <div className="bg-light_black w-full  absolute bottom-0">
       <div className=" px-4 py-3">
         <div className="flex items-center">
-          <DotsIcon />
-          <SoundIcon />
+          <span className="mr-2">
+            <EmojiIcon />
+          </span>
           <input
+            onChange={(e) => setUserInputValue(e.target.value)}
             type="text"
             className="bg-dark text-white p-2 w-full  outline-none  pl-5 rounded-lg"
             placeholder="Search or start new chat"
           />
-          <img className="w-11" src={UserImage} alt="userimage" />
+          <span className="ms-2">
+            {userInputValue.length > 0 ? <SendICon /> : <SoundIcon />}
+          </span>
         </div>
       </div>
     </div>
