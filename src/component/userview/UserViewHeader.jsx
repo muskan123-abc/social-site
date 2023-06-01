@@ -1,6 +1,7 @@
 import React from "react";
 import UserImage from "../../assets/img/user.png";
-const UserViewHeader = () => {
+import { DotsIcon } from "../common/Icons";
+const UserViewHeader = ({ userData }) => {
   return (
     <div className="bg-light_black w-full ">
       <div className=" px-4 py-3">
@@ -12,11 +13,11 @@ const UserViewHeader = () => {
           />
           <div className="flex items-center justify-between w-full ">
             <div>
-              <h2 className="pl-3 text-white font-semibold">fghjk</h2>
+              <h2 className="pl-3 text-white font-semibold">{userData.name}</h2>
               <p className="pl-3 text-white">as</p>
             </div>
             <div>
-              <p className="pl-3 text-white font-thin">nnn</p>
+              <DotsIcon />
             </div>
           </div>
         </div>
