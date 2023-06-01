@@ -80,5 +80,50 @@ export const TabData = [
     name: "Muskan",
     time: "5:4",
   },
-
+];
+export const PersonalData = [
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "what are you doing",
+    para2: "nothing",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
+  {
+    para: "hlo",
+    para2: "hii",
+  },
 ];
