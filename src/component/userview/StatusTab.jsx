@@ -4,10 +4,6 @@ import { useChatProvider } from "../provider/ChatProvider";
 
 const StatusTab = () => {
   const { setStatusClickValue } = useChatProvider();
-  const tabHandler = (value) => {
-    // setStatusClickValue(true);
-    setStatusClickValue(true);
-  };
 
   return (
     <div className="md:w-[665px] w-full h-full bg-light_black overflow-hidden ">
@@ -16,7 +12,7 @@ const StatusTab = () => {
           return (
             <div
               className="mt-3 px-4 py-2 cursor-pointer hover:bg-light_black"
-              onClick={() => tabHandler()}
+              onClick={() => setStatusClickValue(true)}
               key={i}
             >
               <div className="flex items-center ">

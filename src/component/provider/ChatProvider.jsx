@@ -9,12 +9,16 @@ export default function UserChatProvider({ children }) {
   const [userInputValue, setUserInputValue] = useState("");
   const [userclickValue, setUserClickValue] = useState(false);
   const [statusclickValue, setStatusClickValue] = useState(false);
+  const [chatValue, setChatValue] = useState(null);
   const [userData, setUserData] = useState({});
+
   const value = {
     setUserInputValue,
     userInputValue,
     setUserClickValue,
     userclickValue,
+    chatValue,
+    setChatValue,
     setUserData,
     userData,
     setStatusClickValue,

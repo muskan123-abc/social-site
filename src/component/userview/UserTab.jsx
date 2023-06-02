@@ -42,7 +42,7 @@ const UserTab = () => {
                     <p className="pl-3 text-white font-light  ff_opensans text-xs">
                       {value.time}
                     </p>
-                    <p className=" mt-2 flex justify-center w-5 h-5 mb-0  ms-3 text-white font-light  ff_opensans text-xs rounded-full    bg-light_black ">
+                    <p className=" mt-2 flex justify-center items-center w-5 h-5 mb-0  ms-3 text-white font-light  ff_opensans text-[10px] rounded-full    bg-light_black ">
                       {value.message}
                     </p>
                   </div>
