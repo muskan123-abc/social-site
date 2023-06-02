@@ -1,6 +1,7 @@
 import React from "react";
 import { PersonalData } from "../common/Helper";
 import { DeleteICon } from "../common/Icons";
+import tick from "../../assets/img/png/tick.png";
 const PersonalChat = () => {
   return (
     <div className="overflow-auto sidebar_chat  h-full bg-whatshap-background bg-no-repeat bg-cover ">
@@ -15,17 +16,28 @@ const PersonalChat = () => {
         return (
           <div className="p-10 " key={i}>
             <div className="flex items-center">
-              <div className=" flex flex-col items-start ">
-                <p className="text-white max-w-[200px]  xl:max-w-sm break-words w-auto ff_opensans font-normal text-base bg-light_black border  inline  border-light_black   px-2 py-1 rounded-lg">
+              <div className="flex items-center gap-3 justify-between bg-light_black border    border-light_black   px-2 py-1 rounded-lg">
+                <p className="text-white max-w-[200px]  xl:max-w-[250px] break-words w-auto ff_opensans font-normal text-base ">
                   {value.para}
                 </p>
               </div>
-              <DeleteICon />
+              <span className="pt-8 ms-2 cursor-pointer">
+                <DeleteICon />
+              </span>
             </div>
             <div className=" flex flex-col items-end mt-3 ">
-              <p className="text-white max-w-[200px]  ms-5 xl:max-w-sm break-words  font-normal text-base  ff_opensans bg-light_black border  inline border-light_black   px-2 py-1 rounded-lg">
-                {value.para2}
-              </p>
+              <div className="flex items-center gap-3 me-6 justify-between bg-light_black border    border-light_black   px-2 py-1 rounded-lg">
+                <p className="text-white max-w-[200px]   xl:max-w-[250px] break-words w-auto ff_opensans font-normal text-base ">
+                  {value.para}
+                </p>
+                <span className="pt-3">
+                  <img className="w-2 h-2" src={tick} alt="tick" />{" "}
+                  <img className="w-2 h-2 ms-1 -mt-2" src={tick} alt="tick" />
+                </span>
+              </div>
+              <span className="cursor-pointer ">
+                <DeleteICon />
+              </span>
             </div>
           </div>
         );
