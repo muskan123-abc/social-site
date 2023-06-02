@@ -120,45 +120,9 @@ export const PersonalData = [
     para2: "hii",
   },
   {
-    para: "what are you doing",
-    para2: "nothing",
-  },
-  {
-    para: "hloooooooooooooooooooooooooooooooooooooooooo",
-    para2:
-      "hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
-  },
-  {
-    image: UserImg,
-    para2: "hii",
-  },
-  {
     para: "hlo",
     para2: "hii",
   },
-  {
-    para: "hlo",
-    para2: "hii",
-  },
-  {
-    para: "hlo",
-    para2: "hii",
-  },
-  {
-    para: "hlo",
-    para2: "hii",
-  },
-  {
-    para: "hlo",
-    para2: "hii",
-  },
-  {
-    para: "hlo",
-    para2: "hii",
-  },
-  {
-    para: "hlo",
-    para2: "hii",
-  },
+
 ];
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import UserViewHeader from "./UserViewHeader";
 import UserViewFooter from "./UserViewFooter";
 import WhatshapWeb from "../../assets/img/png/whtashapweb.png";
@@ -6,7 +6,8 @@ import { useChatProvider } from "../provider/ChatProvider";
 import PersonalChat from "./PersonalChat";
 
 const UserChat = () => {
-  const { userclickValue, userData } = useChatProvider();
+  const { userclickValue, userData,  } = useChatProvider();
+  const [chatArray, setChatArray] = useState([]);
   return (
     <div className="bg-dark w-full relative  sm:block hidden ">
       {userclickValue ? (
@@ -15,9 +16,9 @@ const UserChat = () => {
             <UserViewHeader userData={userData} />
           </div>
           <div className="chat_height overflow-auto">
-            <PersonalChat />
+            <PersonalChat setChatArray={setChatArray} chatArray={chatArray} />
           </div>
-          <UserViewFooter />
+          <UserViewFooter  setChatArray={setChatArray} chatArray={chatArray}/>
         </>
       ) : (
         <div className="flex flex-col items-center justify-center w-full text-white h-full px-4">
