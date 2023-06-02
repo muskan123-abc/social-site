@@ -25,7 +25,7 @@ const UserViewFooter = () => {
           <input
             onChange={(e) => setUserInputValue(e.target.value)}
             type="text"
-            className="bg-dark text-white p-2 w-full ff_source font-normal text-base  outline-none ms-3  pl-5 rounded-lg"
+            className="bg-dark text-white p-2 w-full ff_opensans font-normal text-base  outline-none ms-3  pl-5 rounded-lg"
             placeholder="Search or start new chat"
           />
           <span className="ms-2 cursor">

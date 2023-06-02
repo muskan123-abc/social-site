@@ -1,5 +1,5 @@
 import React from "react";
-import UserImage from "../../assets/img/user.png";
+import UserImage from "../../assets/img/png/user.png";
 import { DotsIcon, SearchICon } from "../common/Icons";
 const UserViewHeader = ({ userData }) => {
   return (
@@ -13,10 +13,10 @@ const UserViewHeader = ({ userData }) => {
           />
           <div className="flex items-center justify-between w-full ">
             <div>
-              <h2 className="pl-3 text-white font-semibold ff_source text-xl mb-0">
+              <h2 className="pl-3 text-white font-semibold ff_opensans text-xl mb-0">
                 {userData.name}
               </h2>
-              <p className="pl-3 text-white mb-0 font-normal ff_source text-sm">
+              <p className="pl-3 text-white mb-0 font-normal ff_opensans text-sm">
                 as
               </p>
             </div>

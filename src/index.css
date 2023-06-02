@@ -1,16 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap');
 
-
-.ff_source {
-    font-family: 'Source Serif Pro',
-        serif;
+.ff_opensans {
+    font-family: 'Open Sans',
+        sans-serif;
 }
 
 .chat_height {
     height: calc(100vh - 142px);
+}
+
+.status_chat {
+    height: calc(100vh - 60px);
+}
+
+.status_height {
+    height: calc(100vh - 70px);
 }
 
 .sidebar_chat {

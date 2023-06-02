@@ -9,7 +9,7 @@ const SearchHeader = () => {
       </span>
       <input
         type="text"
-        className=" text-white ff_source font-normal bg-light_black text-base  p-2 w-full outline-none pl-5 "
+        className=" text-white ff_opensans font-normal bg-light_black text-base  p-2 w-full outline-none pl-5 "
         placeholder="Search or start new chat"
       />
     </div>

@@ -11,6 +11,9 @@ module.exports = {
         dark: "#202C33",
         light_black: "#2A3942",
       },
+      backgroundImage: {
+        "whatshap-background": "url('./assets/img/jpg/wallpaper.jpg')",
+      },
     },
   },
   plugins: [],

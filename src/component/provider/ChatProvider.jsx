@@ -8,6 +8,7 @@ export function useChatProvider() {
 export default function UserChatProvider({ children }) {
   const [userInputValue, setUserInputValue] = useState("");
   const [userclickValue, setUserClickValue] = useState(false);
+  const [statusclickValue, setStatusClickValue] = useState(false);
   const [userData, setUserData] = useState({});
   const value = {
     setUserInputValue,
@@ -15,7 +16,9 @@ export default function UserChatProvider({ children }) {
     setUserClickValue,
     userclickValue,
     setUserData,
-    userData
+    userData,
+    setStatusClickValue,
+    statusclickValue,
   };
   return (
     <ChatProviderContext.Provider value={value}>

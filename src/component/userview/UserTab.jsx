@@ -5,13 +5,11 @@ import { TabData } from "../common/Helper";
 import { useChatProvider } from "../provider/ChatProvider";
 
 const UserTab = () => {
-  const {  setUserClickValue, setUserData } =
-    useChatProvider();
-
+  const { setUserClickValue, setUserData } = useChatProvider();
   const tabHandler = (value) => {
     setUserClickValue(true);
     setUserData(value);
-  };  
+  };
 
   return (
     <div className="md:w-[665px] w-full h-full bg-dark overflow-hidden ">
@@ -33,13 +31,20 @@ const UserTab = () => {
                 />
                 <div className="flex items-center justify-between w-full pb-2 border-b transition-all ease-in-out duration-300">
                   <div>
-                    <h2 className="pl-3 text-white font-semibold ff_source text-lg">
+                    <h2 className="pl-3 text-white font-semibold ff_opensans text-lg">
                       {value.name}
                     </h2>
-                    <p className="pl-3 text-white font-light ff_source text-base">as</p>
+                    <p className="pl-3 text-white font-light ff_opensans text-base">
+                      as
+                    </p>
                   </div>
                   <div>
-                    <p className="pl-3 text-white font-light  ff_source text-sm">{value.time}</p>
+                    <p className="pl-3 text-white font-light  ff_opensans text-xs">
+                      {value.time}
+                    </p>
+                    <p className=" mt-2 flex justify-center w-5 h-5 mb-0  ms-3 text-white font-light  ff_opensans text-xs rounded-full    bg-light_black ">
+                      {value.message}
+                    </p>
                   </div>
                 </div>
               </div>
