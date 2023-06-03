@@ -5,97 +5,60 @@ export const TabData = [
     name: "Muskan",
     time: "5:46",
     message: "2",
+    userChat: ["hlo", "hii", "hlo", "hii"],
+    img:[]
   },
   {
     image: UserImg,
     name: "Muskan33",
     time: "5:46",
     message: "4",
+    userChat: ["hlo", "hii", "hlo", "hii"],
   },
   {
     image: UserImg,
     name: "Muskanwe",
     time: "5:46",
     message: "1",
+    userChat: [],
   },
   {
     image: UserImg,
     name: "Muskan4",
     time: "5:46",
     message: "3",
+    userChat: [],
   },
   {
     image: UserImg,
     name: "Muskan5",
     time: "5:46",
     message: "2",
+    userChat: [],
   },
   {
     image: UserImg,
     name: "Muskan",
     time: "5:46",
     message: "2",
+    userChat: [],
   },
   {
     image: UserImg,
     name: "Muskan",
     time: "5:46",
     message: "2",
+    userChat: [],
   },
   {
     image: UserImg,
     name: "Muskan",
     time: "5:46",
     message: "2",
+    userChat: [],
   },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:46",
-    message: "2",
-  },
-  {
-    image: UserImg,
-    name: "Muskan",
-    time: "5:4",
-    message: "2",
-  },
+
+
 ];
 export const StatusData = [
   {
@@ -123,6 +86,4 @@ export const PersonalData = [
     para: "hlo",
     para2: "hii",
   },
-
 ];
-

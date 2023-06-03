@@ -6,8 +6,9 @@ import { useChatProvider } from "../provider/ChatProvider";
 import PersonalChat from "./PersonalChat";
 
 const UserChat = () => {
-  const { userclickValue, userData,  } = useChatProvider();
-  const [chatArray, setChatArray] = useState([]);
+  const { userclickValue, userData, setChatArray, chatArray } =
+    useChatProvider();
+
   return (
     <div className="bg-dark w-full relative  sm:block hidden ">
       {userclickValue ? (
@@ -18,7 +19,11 @@ const UserChat = () => {
           <div className="chat_height overflow-auto">
             <PersonalChat setChatArray={setChatArray} chatArray={chatArray} />
           </div>
-          <UserViewFooter  setChatArray={setChatArray} chatArray={chatArray}/>
+          <UserViewFooter
+            setChatArray={setChatArray}
+            chatArray={chatArray}
+            userData={userData}
+          />
         </>
       ) : (
         <div className="flex flex-col items-center justify-center w-full text-white h-full px-4">

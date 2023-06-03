@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AttachmentICon,
   EmojiIcon,
@@ -7,17 +7,23 @@ import {
 } from "../common/Icons";
 import { useChatProvider } from "../provider/ChatProvider";
 
-const UserViewFooter = ({ chatArray, setChatArray }) => {
-  const { userInputValue, setUserInputValue } = useChatProvider();
+const UserViewFooter = ({ chatArray, setChatArray ,userData}) => {
+  const { userInputValue, setUserInputValue,setFileUpload,fileUpload } = useChatProvider();
 
+  const imageUploadHandler = (file) => {
+    const imageUrl= URL.createObjectURL(file)
+    setFileUpload(imageUrl)
+     
+   };
   const chatHandler = () => {
-    console.log("userInputValueuserInputValue", userInputValue);
-    // setChatValue(userInputValue)
-    chatArray.push(userInputValue);
-    setChatArray(chatArray)
-    setUserInputValue("")
-    console.log("chatArraychatArray", chatArray);
+    chatArray && chatArray.push(userInputValue);
+    setFileUpload(fileUpload)
+    setChatArray(chatArray);
+    setUserInputValue("");
+    console.log("chatArraychatArray",userData.img
+    )
   };
+
   return (
     <div className="bg-light_black w-full  absolute bottom-0">
       <div className=" px-4 py-3">
@@ -30,7 +36,13 @@ const UserViewFooter = ({ chatArray, setChatArray }) => {
               <AttachmentICon />
             </span>
           </label>
-          <input type="file" hidden name="photo" id="upload-photo" />
+          <input
+            type="file"
+            hidden
+            name="photo"
+            onChange={(e) => imageUploadHandler(e.target.files[0])}
+            id="upload-photo"
+          />
           <input
             value={userInputValue}
             onChange={(e) => setUserInputValue(e.target.value)}
