@@ -7,29 +7,60 @@ export const TabData = [
     name: "Muskan",
     time: "5:46",
     message: "2",
-    userChat: ["hlo", "hii", "hlo", "hii"],
-    img: [],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
   {
     image: UserImg,
     name: "Muskan33",
     time: "5:46",
     message: "4",
-    userChat: ["hlo", "hii", "hlo", "hii"],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
   {
     image: UserImg,
     name: "Muskanwe",
     time: "5:46",
     message: "1",
-    userChat: [],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
   {
     image: UserImg,
     name: "Muskan4",
     time: "5:46",
     message: "3",
-    userChat: [],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
   {
     image: UserImg,
@@ -43,21 +74,45 @@ export const TabData = [
     name: "Muskan",
     time: "5:46",
     message: "2",
-    userChat: [],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
   {
     image: UserImg,
     name: "Muskan",
     time: "5:46",
     message: "2",
-    userChat: [],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
   {
     image: UserImg,
     name: "Muskan",
     time: "5:46",
     message: "2",
-    userChat: [],
+    userChat: [
+      {
+        name: "hlo",
+      },
+
+      {
+        name: "hlo",
+      },
+    ],
   },
 ];
 export const StatusData = [

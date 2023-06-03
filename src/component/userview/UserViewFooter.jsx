@@ -6,22 +6,23 @@ import {
   SoundIcon,
 } from "../common/Icons";
 import { useChatProvider } from "../provider/ChatProvider";
+// import EmojiPicker from 'emoji-picker-react';
 
-const UserViewFooter = ({ chatArray, setChatArray ,userData}) => {
-  const { userInputValue, setUserInputValue,setFileUpload,fileUpload } = useChatProvider();
+const UserViewFooter = ({ chatArray, setChatArray, userData }) => {
+  const { userInputValue, setUserInputValue, setFileUpload, fileUpload } =
+    useChatProvider();
 
   const imageUploadHandler = (file) => {
-    const imageUrl= URL.createObjectURL(file)
-    setFileUpload(imageUrl)
-     
-   };
+    const imageUrl = URL.createObjectURL(file);
+    setFileUpload(imageUrl);
+  };
+
+
   const chatHandler = () => {
-    chatArray && chatArray.push(userInputValue);
-    setFileUpload(fileUpload)
+    chatArray && chatArray.push({ img: fileUpload });
+    chatArray && chatArray.push({ name: userInputValue });
     setChatArray(chatArray);
     setUserInputValue("");
-    console.log("chatArraychatArray",userData.img
-    )
   };
 
   return (
