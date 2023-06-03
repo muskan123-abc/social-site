@@ -5,8 +5,19 @@ export const TabData = [
     name: "Muskan",
     time: "5:46",
     message: "2",
-    userChat: ["hlo", "hii", "hlo", "hii"],
-    img:[]
+    userChat: [
+      {
+        name:"hlo"
+      },
+   
+      {
+        name:"hlo"
+      },
+   
+   
+   
+    
+    ],
   },
   {
     image: UserImg,
@@ -57,8 +68,6 @@ export const TabData = [
     message: "2",
     userChat: [],
   },
-
-
 ];
 export const StatusData = [
   {
