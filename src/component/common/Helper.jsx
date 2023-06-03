@@ -1,4 +1,6 @@
 import UserImg from "../../assets/img/png/user.png";
+import chatbegin from "../../assets/img/jpg/status.jpg";
+import status from "../../assets/img/png/right.png";
 export const TabData = [
   {
     image: UserImg,
@@ -6,7 +8,7 @@ export const TabData = [
     time: "5:46",
     message: "2",
     userChat: ["hlo", "hii", "hlo", "hii"],
-    img:[]
+    img: [],
   },
   {
     image: UserImg,
@@ -57,8 +59,6 @@ export const TabData = [
     message: "2",
     userChat: [],
   },
-
-
 ];
 export const StatusData = [
   {
@@ -67,12 +67,12 @@ export const StatusData = [
     para: "no updates",
   },
   {
-    image: UserImg,
+    image: chatbegin,
     name: "Meena",
     para: "2 min. ago",
   },
   {
-    image: UserImg,
+    image: status,
     name: "Teena",
     para: "1 hour ago",
   },

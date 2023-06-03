@@ -35,3 +35,7 @@
 ::-webkit-scrollbar {
     width: 5px;
 }
+
+.tabs .tab img.active {
+    border: 2px solid blue;
+}

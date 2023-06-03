@@ -13,11 +13,14 @@ export default function UserChatProvider({ children }) {
   const [userData, setUserData] = useState({});
   const [chatArray, setChatArray] = useState([]);
   const [fileUpload, setFileUpload] = useState("");
+  const [statusData, setStatusData] = useState({});
 
   const value = {
     setUserInputValue,
     userInputValue,
     setUserClickValue,
+    setStatusData,
+    statusData,
     userclickValue,
     chatValue,
     setChatArray,

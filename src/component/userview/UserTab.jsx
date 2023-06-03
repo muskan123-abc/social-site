@@ -5,13 +5,12 @@ import { TabData } from "../common/Helper";
 import { useChatProvider } from "../provider/ChatProvider";
 
 const UserTab = () => {
-  const { setUserClickValue, setUserData, setChatArray,chatArray } = useChatProvider();
-
+  const { setUserClickValue, setUserData, setChatArray, chatArray } =
+    useChatProvider();
   const tabHandler = (value) => {
     setUserClickValue(true);
     setUserData(value);
     setChatArray(value.userChat);
-    
   };
 
   return (

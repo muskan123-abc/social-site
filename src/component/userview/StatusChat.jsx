@@ -1,16 +1,15 @@
 import React from "react";
-import WhatshapWeb from "../../assets/img/png/whtashapweb.png";
 import { useChatProvider } from "../provider/ChatProvider";
 import loading from "../../assets/img/png/loading.png";
 const StatusChat = () => {
-  const { statusclickValue } = useChatProvider();
-  console.log("statusclickValuestatusclickValue", statusclickValue);
+  const { statusclickValue, statusData } = useChatProvider();
+  console.log("statusclickValuestatusclickValue", statusData);
   return (
     <div className="bg-dark w-full relative  sm:block hidden ">
       {statusclickValue ? (
         <>
-          <div className=" h-full overflow-auto flex  items-center justify-center">
-            <img className="w-[250px]" src={WhatshapWeb} alt="whtashap" />
+          <div className=" h-full overflow-auto flex  items-center justify-center ">
+            <img className="w-[650px]" src={statusData.image} alt="whtashap" />
           </div>
         </>
       ) : (
